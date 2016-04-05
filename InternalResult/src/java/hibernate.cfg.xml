@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/project1?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">userName</property>
+    <property name="hibernate.connection.password">password</property>
+    <mapping class="dto.SubjectId"/>
+    <mapping class="dto.Passout"/>
+    <mapping class="dto.StudentDetails"/>
+    <mapping class="dto.FacultySubject"/>
+    <mapping class="dto.Admin"/>
+    <mapping class="dto.StudentWorking"/>
+    <mapping class="dto.Studentexdetails"/>
+    <mapping class="dto.Faculty"/>
+    <mapping class="dto.StdMarks"/>
+    <mapping class="dto.Subject"/>
+    <mapping class="dto.Stdfine"/>
+  </session-factory>
+</hibernate-configuration>
